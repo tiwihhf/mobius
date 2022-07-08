@@ -1,0 +1,230 @@
+* {
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+  font-family:'Barlow Condensed', Tahoma, Verdana, Sans-serif;
+}
+
+body {
+  display:flex;
+  flex-direction:column;
+}
+
+a {
+  text-decoration:none;
+}
+
+.parallax-container {
+  display:flex;
+}
+  
+.parallax {
+  background-size:cover;
+  background-attachment:fixed;
+  background-repeat:no-repeat;
+  background-position:center;
+}
+
+/* SECTION 1: HEADER ------------------------------------------------------------------- */
+.header {
+  display:flex;
+  background-color:#101b18;
+  justify-content:space-between;
+  align-items:center;
+  padding-right:43px;
+  padding-left:40px;
+  flex-basis:45px;
+  font-size:18px;
+}
+
+.header a {
+  color:#84cb3e;
+}
+
+.header ul {
+  display:flex;
+  gap:34px;
+}
+
+/* SECTION 2: MOBIUS GIF (PIC FOR NOW) ------------------------------------------------------------------- */
+.parallax.one {
+  background-image:url("../img/mobius-loading-screen.png");
+  height:500px;
+  width:100%;
+}
+
+/* SECTION 3: QUOTE SECTION ------------------------------------------------------------------- */
+.quote {
+  height:300px;
+  display:flex;
+  flex-direction:column;
+  color:#b9f181;
+  background-color:#0a2d28;
+  justify-content:center;
+  padding-left:265px;
+  padding-right:265px;
+  row-gap:16px;
+}
+
+.quote a {
+  color:#b9f181;
+}
+
+.quote #quote-text {
+  font-size:30px;
+  line-height:1.5;
+  font-weight:lighter;
+  font-style:italic;
+  text-align:justify;
+}
+
+.quote #quote-source {
+  font-size:14px;
+  font-weight:bolder;
+  text-align:right;
+}
+
+/* SECTION 4: MOBIUS FIGHT TRANSFORMATION PIC | PARALLAX TWO ----------------------------------- */
+.parallax.two {
+  background-image:url("../img/mobius-fight.png");
+  height:500px;
+  width:100%;
+  background-position-y:-200px;
+}
+
+/* SECTION 5: CHARACTER CHOICE ------------------------------------------------------------------- */
+.choices {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  background-color:#10332e;
+  height:365px;
+  row-gap:36px;
+}
+
+.choices h2 {
+  text-decoration:underline;
+  color:#84cb3e;
+}
+
+.options-container {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:100px;
+  text-align:center;
+}
+
+.options img {
+  width:180px;
+  height:auto;
+  border:3px #84cb3e solid;
+  border-radius:5px;
+}
+
+.bottom-text {
+  padding:8px;
+}
+
+.bottom-text a {
+  color:#b9f181;
+}
+
+.psy a:hover {
+  color:#f055cd;
+}
+
+.bio a:hover {
+  color:#e3b642;
+}
+
+.mech a:hover {
+  color:#79c1f6;
+}
+
+/* SECTION 6: SELECTION TIP ------------------------------------------------------------------- */
+.tip {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:545px;
+}
+
+.tip img {
+  height:320px;
+  width:auto;
+  opacity:1.0;
+}
+
+.tip p {
+  text-align:justify;
+}
+
+.tip-text-container {
+  display:flex;
+  justify-content:space-evenly;
+  align-items:center;
+  background-color:#c2cb9e;
+  width:80%;
+  height:425px;
+  border-radius:50px;
+  opacity:0.85;
+}
+
+.tip-text-container img {
+  height:300px;
+  width:300px;
+  border-radius:50px;
+}
+
+.tip-text {
+  display:flex;
+  flex-direction:column;
+  color:#e71616;
+  row-gap:28px;
+  width:450px;
+  align-self:center;
+}
+
+.tip-text p {
+  font-size:18px;
+  text-align:justify;
+  line-height:1.5;
+}
+
+.tip-header-text {
+  display:flex;
+  gap:20px;
+  font-size:36px;
+}
+
+.tip-header-text #icon {
+  background-color:#e71616;
+  color:#fff;
+  flex-shrink:0;
+  padding-left:28px;
+  padding-right:28px;
+  border-radius:100%;
+}
+
+.parallax.three {
+  background-image:url('../img/mobius-parallax-image2.jpeg');
+  height:545px;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* SECTION 7: FOOTER ------------------------------------------------------------------- */
+.footer {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  row-gap:12px;
+  height:85px;
+  background-color:#101b18;
+  color:#84cb3e;
+}
