@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,800;1,100&display=swap');
+
 * {
   padding:0;
   margin:0;
   box-sizing:border-box;
-  font-family:'Barlow Condensed', Tahoma, Verdana, Sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
 }
 
 body {
@@ -34,7 +36,8 @@ a {
   padding-right:43px;
   padding-left:40px;
   flex-basis:45px;
-  font-size:18px;
+  font-size:23px;
+  gap:34px;
 }
 
 .header a {
@@ -51,23 +54,15 @@ a {
 }
 
 /* SECTION 2: MOBIUS VID ------------------------------------------------------------------- */
-.video-bg {
-  background-image:url('../img/mobius-loading-screen.png');
-  background-size:cover;
-  background-repeat:no-repeat;
-  background-position:center;
+.parallax.one {
+  background-image:url("../img/mobius-loading-screen.png");
   height:500px;
-}
-
-#background-video {
   width:100%;
-  height:500px;
-  object-fit:cover;
 }
 
 /* SECTION 3: QUOTE SECTION ------------------------------------------------------------------- */
 .quote {
-  height:300px;
+  height:24vw;
   display:flex;
   flex-direction:column;
   color:#b9f181;
@@ -83,7 +78,7 @@ a {
 }
 
 .quote #quote-text {
-  font-size:30px;
+  font-size:2.5vw;
   line-height:1.5;
   font-weight:lighter;
   font-style:italic;
@@ -91,7 +86,7 @@ a {
 }
 
 .quote #quote-source {
-  font-size:14px;
+  font-size:1.4vw;
   font-weight:bolder;
   text-align:right;
 }
@@ -101,7 +96,6 @@ a {
   background-image:url("../img/mobius-fight.png");
   height:500px;
   width:100%;
-  background-position-y:-200px;
 }
 
 /* SECTION 5: CHARACTER CHOICE ------------------------------------------------------------------- */
@@ -128,15 +122,57 @@ a {
   text-align:center;
 }
 
-.options img {
-  width:180px;
-  height:auto;
-  border:3px #84cb3e solid;
-  border-radius:5px;
+.box-img {
+  background-size:cover;
 }
 
 .bottom-text {
   padding:8px;
+}
+
+/* CHOICES IMAGE + HOVER (START) */
+.kiana {
+  background-image:url('../img/kiana-macarena.png');
+}
+
+.fuhua {
+  background-image:url('../img/senti-spin.png');
+}
+
+.mei {
+  background-image:url('../img/chibi-mei-dancing.png');
+}
+
+.bronya {
+  background-image:url('../img/angry-bronya.png');
+}
+
+.kiana:hover {
+  background-image:url('../vid/kiana-macarena.gif');
+}
+
+.fuhua:hover {
+  background-image:url('../vid/senti-spin.gif');
+}
+
+.mei:hover {
+  background-image:url('../vid/chibi-mei-dancing.gif');
+}
+
+.bronya:hover {
+  background-image:url('../vid/angry-bronya.gif');
+}
+/* CHOICES IMAGE + HOVER (END) */
+
+.options div {
+  width:180px;
+  height:160px;
+  border:3px #84cb3e solid;
+  border-radius:5px;
+}
+
+.options p {
+  font-size:18px;
 }
 
 .bottom-text a {
@@ -200,7 +236,7 @@ a {
 }
 
 .tip-text p {
-  font-size:18px;
+  font-size:23px;
   text-align:justify;
   line-height:1.5;
 }
@@ -208,7 +244,7 @@ a {
 .tip-header-text {
   display:flex;
   gap:20px;
-  font-size:36px;
+  font-size:41px;
 }
 
 .tip-header-text #icon {
@@ -239,4 +275,5 @@ a {
   height:85px;
   background-color:#101b18;
   color:#84cb3e;
+  font-size:20px;
 }
